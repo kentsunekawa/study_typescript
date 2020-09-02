@@ -95,7 +95,7 @@ class Person {
 
 ## 継承
 
-extends 　
+extends  
 継承した class のコンストラクタ関数の中では super() を実行する  
 継承した先で呼び出したいメンバーの修飾子は protected にする  
 readonly は継承先でも呼び出せる
