@@ -5,6 +5,8 @@ class は typescript 特有の機能ではないが、typescript を使うこと
 
 ## 基本
 
+下記ソースのプロパティの型注釈している部分を フィールド と呼ぶ
+
 ```typescript
 class Person {
   name: string;
@@ -18,9 +20,6 @@ const quill = new Person("Quill");
 
 ## method
 
-this の型注釈で class 名を使用  
-下記ソースのプロパティの型注釈している部分を フィールド と呼ぶ
-
 ```typescript
 class Person {
   name: string;
@@ -33,11 +32,13 @@ class Person {
 }
 ```
 
+this の型注釈で class 名を使用
+
 ## 修飾子
 
 **修飾子一覧**
 
-- public → どこからでも読み書きか
+- public → どこからでも読み書き可
 - private → その class 内から読み書き可
 - protected → その class 内と継承先の class 内からのみ読み書き可
 
@@ -94,9 +95,9 @@ class Person {
 
 ## 継承
 
-extends 　　
-継承した class のコンストラクタ関数の中では super() を実行する　　
-継承した先で呼び出したいメンバーの修飾子は protected にする　　
+extends 　
+継承した class のコンストラクタ関数の中では super() を実行する  
+継承した先で呼び出したいメンバーの修飾子は protected にする  
 readonly は継承先でも呼び出せる
 
 ```typescript
