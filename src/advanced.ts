@@ -11,19 +11,19 @@ type Blogger = {
 };
 // type EngineerBlogger = Engineer & Blogger;
 
-interface EngineerBlogger extends Engineer, Blogger {}
+// interface EngineerBlogger extends Engineer, Blogger {}
 
-const quill: EngineerBlogger = {
-  name: "Quill",
-  role: "front-end",
-  follower: 1000,
-};
+// const quill: EngineerBlogger = {
+//   name: "Quill",
+//   role: "front-end",
+//   follower: 1000,
+// };
 
-type tmp = string & number;
+// type tmp = string & number;
 
-type NumberBoolean = number | boolean;
-type StringNumber = string | number;
-type Mix = NumberBoolean & StringNumber;
+// type NumberBoolean = number | boolean;
+// type StringNumber = string | number;
+// type Mix = NumberBoolean & StringNumber;
 
 // -------------------------------------------------
 
