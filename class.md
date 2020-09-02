@@ -1,11 +1,9 @@
 # class
 
-class typescript 特有の機能ではないが、typescript を使うことで、  
+class は typescript 特有の機能ではないが、typescript を使うことで、  
 様々な機能を使うことができる。
 
 ## 基本
-
-===
 
 ```typescript
 class Person {
@@ -19,8 +17,6 @@ const quill = new Person("Quill");
 ```
 
 ## method
-
-===
 
 this の型注釈で class 名を使用  
 下記ソースのプロパティの型注釈している部分を フィールド と呼ぶ
@@ -38,8 +34,6 @@ class Person {
 ```
 
 ## 修飾子
-
-===
 
 **修飾子一覧**
 
@@ -67,8 +61,6 @@ class Person {
 
 ## 初期化の省略
 
-===
-
 フィールドを削除して、コンストラクタ関数の引数で型注釈（修飾子必須）
 
 ```typescript
@@ -84,8 +76,6 @@ class Person {
 ```
 
 ## readonly
-
-===
 
 アクセス修飾子の前につける  
 readonly でもコンストラクタ関数の中では初期化できる  
@@ -103,8 +93,6 @@ class Person {
 ```
 
 ## 継承
-
-===
 
 extends 　　
 継承した class のコンストラクタ関数の中では super() を実行する　　
@@ -135,8 +123,6 @@ class Teacher extends Person {
 ```
 
 ## ゲッター・セッター
-
-===
 
 初期化はプロパティ名の前に \_ （アンダーバー）をつける  
 セッターとゲッターは関数でありながら、プロパティのようにアクセスできる
@@ -177,8 +163,6 @@ console.log(teacher.subject);
 
 ## static
 
-===
-
 インスタンスを生成せずに使える class のメソッド
 
 ```typescript
@@ -199,8 +183,6 @@ console.log(Person.isAdoult(40));
 ```
 
 ## abstruct
-
-===
 
 継承専用の class  
 abstruct class はインスタンスを生成できない（継承のみ化）  
@@ -230,8 +212,6 @@ class Teacher extends Person {
 ```
 
 ## singleton パターン
-
-===
 
 デザインパターンの一種  
 一度だけしかインスタンスを生成できない class  
