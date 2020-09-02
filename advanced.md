@@ -152,7 +152,7 @@ const designer: Designer = {
 };
 ```
 
-#　関数の overrode
+## 関数の overrode
 
 関数の、この引数の時の返り値はこれ、って指定する
 
