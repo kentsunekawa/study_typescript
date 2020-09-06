@@ -158,7 +158,7 @@ type MappedTypes<T> = {
 type ConditionalTypes = "tomato" extends string ? number : boolean;
 ```
 
-'tomato' 型が string 型に代入できるのであれば number。 できなければ boolean
+'tomato' 型が string 型に代入できるのであれば number。 できなければ boolean  
 三項演算子のようなもの
 
 ```typescript
