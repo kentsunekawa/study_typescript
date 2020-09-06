@@ -134,12 +134,13 @@ if (input) {
 !をつけることで null じゃないと言い切る
 
 ```typescript
-const input2 = document.querySelector("input")!;
+const input = document.querySelector("input")!;
 ```
 
 ## index signature
 
-オブジェクトにあとでメンバーを追加できてしまう
+オブジェクトにあとでメンバーを追加できる  
+注意が必要
 
 ```typescript
 interface Designer {
@@ -151,6 +152,8 @@ const designer: Designer = {
   role: "web",
 };
 ```
+
+上記ソースの「index」はどんな文字でも OK
 
 #　関数の overrode
 
@@ -172,19 +175,9 @@ console.log(toUpperCase(5));
 console.log(toUpperCase(true));
 ```
 
-関数の、この引数の時の返り値はこれ、って指定する場合
+このような書き方もできる
 
 ```typescript
-function toUpperCase(x: string): string;
-function toUpperCase(x: number): number;
-function toUpperCase(x: any): any;
-function toUpperCase(x: string | number): string | number {
-  if (typeof x === "string") {
-    return x.toUpperCase();
-  }
-  return x;
-}
-
 interface TmpFunc {
   (x: string): number;
   (x: number): number;
